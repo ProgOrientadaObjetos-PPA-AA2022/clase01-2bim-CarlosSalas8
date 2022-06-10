@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package paquete1;
 
-/**
- *
- * @author reroes
- */
+
 public class Edificio {
     private String nombre;
     private double costo;
@@ -21,7 +14,7 @@ public class Edificio {
         nombre = m;
     }
 
-    public void establecerCostos(Double m){
+    public void establecerCostos(double m){
         costo = m;
     }
     
@@ -31,5 +24,10 @@ public class Edificio {
    
     public double obtenerCosto(){
         return costo;
-    }    
+    }
+    public String toString(){
+    String cadena = String.format("Edificio de nombre: %s\n\t"
+            + "El costo del edificio es: %.2f", nombre, costo);
+    return cadena;
+    }
 }
